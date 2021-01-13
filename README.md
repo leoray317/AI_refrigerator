@@ -2,25 +2,27 @@
 A refrigerator with food identifying,food recommended(by nutrition and price),food price prediction
  
 # Structure
-![](./datathon_linechatbot/app/static/image/logo.png)
+![](./photo/Structure.png)
+![](./photo/Structure1.png)
 
 #Tool
-![](./datathon_linechatbot/app/static/image/logo.png)
+![](./photo/tool.png)
 
 <br/>
 # Price predict result
 
-![](./datathon_linechatbot/app/static/image/datathon_list.jpg)
+![](./photo/MSE.png)
+![](./photo/predict.png)
 
 # Food identifying
 
-![](./datathon_linechatbot/app/static/image/structure.jpg)
+![](./photo/indentify.png)
 
 
-# Web demo
+# food recommended by nutrition
 
-![](./datathon_linechatbot/app/static/image/final_result.jpg)
+![](./photo/nutrition.png)
 
 # chatbot demo:
 
-![](./datathon_linechatbot/app/static/image/QRcode.jpg)
+![](./photo/line.png)
