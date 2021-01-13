@@ -2,17 +2,18 @@
 A refrigerator with food identifying,food recommended(by nutrition and price),food price prediction
  
 # Structure
-![](./photo/Structure.png)
-![](./photo/Structure1.png)
+![](./photo/Structure.PNG)
+![](./photo/Structure1.PNG)
 
 # Tool
-![](./photo/tool.png)
+![](./photo/tool.PNG)
 
 <br/>
+
 # Price predict result
 
 ![](./photo/MSE.png)
-![](./photo/predict.png)
+![](./photo/predict.PNG)
 
 # Food identifying
 
