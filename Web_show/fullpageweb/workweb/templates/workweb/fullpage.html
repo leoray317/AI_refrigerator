@@ -1,0 +1,233 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+
+		<link rel="stylesheet" type="text/css" href="{% static 'css/fullpage.min.css' %}">
+<!--		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">-->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+		
+		<!--引入自己的css-->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/mypagelist.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/mypagelist1.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/mypagelist2.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/mypagelist3.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/mypagelist4.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/mypagelist5.css' %}">
+
+
+		<!--引入jquery再引入fullpage-->
+		<script type="text/javascript" src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/Chart.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/utils.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/fullpage.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/date.format.js' %}"></script>
+<!--		<script type="text/javascript" src="{% static 'js/bootstrap.min' %}"></script>-->
+
+
+		<!--引入自己的js-->
+		<script type="text/javascript" src="{% static 'js/mypagelist.js' %}"></script>
+		
+	</head>
+
+	<body>
+
+		<ul id="myMenu">
+			<li data-menuanchor="homepage" class="menuList"><a href="#homepage">首頁</a></li>
+			<li data-menuanchor="video1"class="menuList"><a href="#video1">影像辨識</a></li>
+			<li data-menuanchor="price" class="menuList"><a href="#price">營養素推薦</a></li>
+			<li data-menuanchor="other" class="menuList"><a href="#other">價格預測</a></li>
+			<!-- <li data-menuanchor="member"class="menuList"><a href="#member">未知項目</a></li> -->
+		</ul>
+
+
+		<div id="fullpage">
+
+			<div class="section section1">
+				
+				<div id="text3d">(◕︿◕✿)<br>Agrifrigerator+<br> ლ(･ ิω･ิლ)</div>
+
+			</div>
+
+			<div class="section section2 " >
+<!--				<img id="json_audio_box">-->
+<!--				<img id="audio_img_test">-->
+
+				<!--內嵌網路影片-->
+<!--				<iframe src="https://www.youtube.com/embed/TCaM1Tl01lQ?autoplay=0&loop=0&controls=1&start=100&end=600&rel=1" id="json_audio_box"></iframe>-->
+
+				<!--webcam影像擷取-->
+				<iframe src="http://10.120.26.222:8081/" id="json_audio_box" width="350" height="350"></iframe>
+				<img id="json_img_box">
+				<img id="json_img_predic_box">
+				<div id="predic_result"></div>
+
+				<button type="button" id='s2_show_img_id'>擷取圖片</button>
+				<button type="button" id='s2_show_predic_id'>預測狀況</button>
+				<div id="img_log" style="overflow:auto"></div>
+
+				<div id="s2_background"></div>
+			</div>
+
+			<div class="section section3" id="sec3">
+				<div id="s3_background"></div>
+				<div id="s3_background_1"></div>
+				<div id="s3_box1">
+					<canvas id="predic_Chart"></canvas>
+				</div>
+				<button type="button" id='s3_predic_update'>更新數量</button>
+
+				<div id="checkboxGroup">
+					<p> 年齡層選擇 </p>
+					<p><input type="radio" name="example" value="7~9" class="btn btn1">7~9歲</p>
+					<p><input type="radio" name="example" value="19~30" class="btn btn2">19~30歲</p>
+					<img id="show_age_img" src=" ">
+					<img class="content" id="aa" src=" ">
+					<img class="content" id="bb" src=" ">
+				</div>
+
+				<div id="now_nutrients_canvas">
+					<canvas id="now_nutrients_chart"></canvas>
+				</div>
+
+				<ul id="as" style="overflow:auto">
+					<li id="m1"><button  onclick="minuser1()">-</button></li>
+					<li id="num1">0</li>
+					<li id="p1"><button onclick="adder1()">+</button></li>
+					<label id="label1">青江白菜</label>
+					<br><br>
+					<li id="m2"><button onclick="minuser2()">-</button></li>
+					<li id="num2">0</li>
+					<li id="p2"><button onclick="adder2()">+</button></li>
+					<label id="label2">蘆筍</label>
+					<br><br>
+					<li id="m3"><button onclick="minuser3()">-</button></li>
+					<li id="num3">0</li>
+					<li id="p3"><button onclick="adder3()">+</button></li>
+					<label id="label3">奇異果</label>
+					<br><br>
+					<li id="m4"><button onclick="minuser4()">-</button></li>
+					<li id="num4">0</li>
+					<li id="p4"><button onclick="adder4()">+</button></li>
+					<label id="label4">西瓜</label>
+					<br><br>
+					<li id="m5"><button onclick="minuser5()">-</button></li>
+					<li id="num5">0</li>
+					<li id="p5"><button onclick="adder5()">+</button></li>
+					<label id="label5">草菇</label>
+					<br><br>
+					<li id="m6"><button onclick="minuser6()">-</button></li>
+					<li id="num6">0</li>
+					<li id="p6"><button onclick="adder6()">+</button></li>
+					<label id="label6">溼香菇</label>
+					<br><br>
+					<li id="m7"><button  onclick="minuser7()">-</button></li>
+					<li id="num7">0</li>
+					<li id="p7"><button onclick="adder7()">+</button></li>
+					<label id="label7">火龍果</label>
+					<br><br>
+					<li id="m8"><button onclick="minuser8()">-</button></li>
+					<li id="num8">0</li>
+					<li id="p8"><button onclick="adder8()">+</button></li>
+					<label id="label8">甘藍</label>
+					<br><br>
+					<li id="m9"><button onclick="minuser9()">-</button></li>
+					<li id="num9">0</li>
+					<li id="p9"><button onclick="adder9()">+</button></li>
+					<label id="label9">竹筍</label>
+					<br><br>
+					<li id="m10"><button onclick="minuser10()">-</button></li>
+					<li id="num10">0</li>
+					<li id="p10"><button onclick="adder10()">+</button></li>
+					<label id="label10">香蕉</label>
+				</ul>
+
+				<button type="button" id='s3_chart_update'>重整標準圖表</button>
+				<div id="s3_box3">
+					<canvas id="myChart"></canvas>
+				</div>
+
+				<div id="s3_suggest_update"></div>
+				<div id="s3_suggest_get"></div>
+				<button type="button" id='s3_suggest_button1'>上傳資料</button>
+				<button type="button" id='s3_suggest_button2'>蔬果推薦</button>
+			</div>
+
+
+			<div class="section section4">
+				<div id="s4_background"></div>
+				<div id="s4_box1"></div>
+				<div id="s4_box2"></div>
+				<div id="s4_box3"></div>
+
+				<img id="sec4_box4">
+				<img id="sec4_box5">
+				<div id="sec4_pre1"></div>
+				<div id="sec4_pre2"></div>
+				<div id="sec4_pre3"></div>
+
+				<div id="myprebtn">
+					<button type="button" id='s4_btn1_id'>青江白菜</button>
+					<button type="button" id='s4_btn2_id'>蘆筍</button>
+					<button type="button" id='s4_btn3_id'>奇異果</button>
+					<button type="button" id='s4_btn4_id'>西瓜</button>
+					<button type="button" id='s4_btn5_id'>草菇</button>
+					<button type="button" id='s4_btn6_id'>溼香菇</button>
+					<button type="button" id='s4_btn7_id'>火龍果</button>
+					<button type="button" id='s4_btn8_id'>甘藍</button>
+					<button type="button" id='s4_btn9_id'>竹筍</button>
+					<button type="button" id='s4_btn10_id'>香蕉</button>
+				</div>
+				
+			</div>
+
+			<div class="section section5">
+				<div onload="init();">
+					<h1>Take a snapshot of the current video stream</h1>
+					See CSS and JavaScript tabs. Click on the Start WebCam button.
+					<p>
+						<button onclick="startWebcam();">Start WebCam</button>
+						<button onclick="stopWebcam();">Stop WebCam</button>
+						<button onclick="snapshot();">Take Snapshot</button>
+					</p>
+					<video onclick="snapshot(this);" width=640 height=480 id="video" controls autoplay></video>
+					<p>Screenshot : <p>
+					<canvas id="myCanvas" width="640" height="480"></canvas>
+				</div>
+			</div>
+
+			<button>取得外部內容</button>
+			<div id="div1"><h2>使用 jQuery AJAX 修改文字內容</h2></div>
+
+			<form method="get">
+					a: <input type="text" id="a" name="a"> <br>
+					b: <input type="text" id="b" name="b"> <br>
+					<p>result: <span id='result'></span></p>
+					<button type="button" id='sum'>提交</button>
+					<br>
+					<br>
+					<br>
+					<button type="button" id='textid'>顯示文字</button>
+					<p>Say: <span id='resul'></span></p>
+			</form>
+<!--				<input type='file' accept='image/*' onchange='openFile(event)'><br>-->
+<!--				<div class="dphoto" style="overflow: scroll">-->
+<!--					<img id='output'>-->
+<!--				</div>-->
+		</div>
+
+		<div id="top_background"></div>
+<!--		<a href="https://www.google.com/?hl=zh-tw" class="pic">-->
+<!--			看不懂請按圖片 : <img src="{% static 'img/img2.jpeg' %}" alt="">-->
+<!--		</a>-->
+	</body>
+</html>
+
+<script type="text/javascript" src="{% static 'js/mypagelist1.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mypagelist2.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mypagelist3.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mypagelist4.js' %}"></script>
+
+

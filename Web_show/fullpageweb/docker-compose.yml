@@ -1,0 +1,27 @@
+version: "3"
+services:
+  web:
+    restart: always
+    build: .
+    command: "python manage.py runserver 0.0.0.0:8000"
+    volumes:
+        - .:/code
+#    depends_on:
+#      - api
+    ports:
+        - "8000:8000"
+#    networks:
+#      - test
+#  api:
+#    image: flask_api_fullpage_flask-api
+#    command: "python flask_api.py 0.0.0.0:5000"
+#    volumes:
+#      - .:/code
+#    ports:
+#      - "5000:5000"
+#    networks:
+#      - test
+#
+#networks:
+#  test:
+#    driver: bridge

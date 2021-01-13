@@ -1,0 +1,5 @@
+​​FROM python:3.8
+​​RUN pip install flask
+​​RUN mkdir /tmp/demo-project
+​​ADD . /tmp/restapi
+​​CMD python /tmp/restapi/curl_app.py

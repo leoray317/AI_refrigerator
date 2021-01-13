@@ -1,0 +1,30 @@
+sudo apt-get update
+sudo apt-get upgrade
+lsusb #看usb有沒有找到webcam
+ls /dev/video? #檢查webcam有沒有mount到/dev
+
+#安裝motion
+sudo apt-get install motion
+sudo nano /etc/default/motion
+	---/etc/default/motion---
+	start_motion_daemon=yes
+	------------------------
+
+sudo nano /etc/motion/motion.conf
+	---/etc/motion/motion.conf---
+	daemon on
+	stream_localhost off
+	webcontrol_localhost off
+	ffmpeg_output_movies off
+	snanpshot_interval 0#自動截圖,單位秒,0=disable
+	target_dir /motion
+	-----------------------------
+sudo service motion start
+sudo chown motion:motion /motion
+
+sudo curl -s -o /dev/null http://127.0.0.1:8080/0/action/snapshot
+
+
+FTP
+ftp://pi:en10222@10.120.26.222
+

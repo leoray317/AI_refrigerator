@@ -1,0 +1,140 @@
+/* 分層桌布 */
+#s4_background {
+  /* background-image:url('../img/f2.png'); */
+  background-repeat:no-repeat;
+  position:absolute;
+  top: 8%;
+  width:100%;
+  height:100%;
+  /* background:	#00D1D1;  */
+  z-index:0;
+  background: #deefff; /* Old browsers */
+  background: -moz-linear-gradient(top, #deefff 0%, #98bede 81%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #deefff 0%,#98bede 81%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #deefff 0%,#98bede 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 );
+}
+
+
+
+#s4_box1{
+  position: absolute;
+  top: 400px;
+  left: 20%;
+  width: 30%;
+  height: 35%;
+  border: solid 5px;
+  border-color: forestgreen;
+  border-radius: 2em;
+  z-index: 1;
+}
+
+#s4_box2{
+  position: absolute;
+  top: 100px;
+  right: 10%;
+  width: 30%;
+  height: 35%;
+  border: solid 5px;
+  border-color: darksalmon;
+  border-radius: 2em;
+  z-index: 1;
+}
+
+#s4_box3{
+  position: absolute;
+  top: 700px;
+  right: 20%;
+  width: 40%;
+  height: 25%;
+  border: solid 15px;
+  border: dotted;
+  border-color: saddlebrown;
+  border-radius: 2em;
+  z-index: 1;
+}
+
+
+
+#sec4_box4 {
+  position: absolute;
+  top: 140px;
+  left: 8%;
+  width: 30%;
+  height: 45%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 2em;
+  z-index: 3;
+}
+
+#sec4_box5 {
+  position: absolute;
+  top: 140px;
+  left: 40%;
+  width: 30%;
+  height: 45%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 2em;
+  z-index: 3;
+}
+
+
+
+
+#sec4_pre1 {
+  position: absolute;
+  top: 150px;
+  right: 15%;
+  width: 10%;
+  height: 10%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 2em;
+  z-index: 3;
+}
+
+#sec4_pre2 {
+  position: absolute;
+  top: 300px;
+  right: 15%;
+  width: 10%;
+  height: 10%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 2em;
+  z-index: 3;
+}
+
+#sec4_pre3 {
+  position: absolute;
+  top: 450px;
+  right: 15%;
+  width: 10%;
+  height: 10%;
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 2em;
+  z-index: 3;
+}
+
+#myprebtn {
+  position: absolute;
+  bottom: 12%;
+  left: 8%;
+  z-index: 3;
+}
+
+#myprebtn button {
+  
+  display: inline-block;
+  width: 8vw;
+  height: 10vh;
+  border-radius: 2em;
+}

@@ -1,0 +1,58 @@
+#my_camera {
+  position:absolute;
+  top: 100px;
+  left: 20px;
+  width:400px;
+  height:300px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#my_camera_img {
+  position:absolute;
+  top: 500px;
+  left: 20px;
+  width:400px;
+  height:300px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#shotbutton {
+  position:absolute;
+  top: 450px;
+  left: 20px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 20px;
+}
+
+#my_video {
+  position:absolute;
+  top: 100px;
+  left: 520px;
+  width:400px;
+  height:300px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#my_video_img {
+  position:absolute;
+  top: 500px;
+  left: 520px;
+  width:400px;
+  height:300px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#shotbutton1 {
+  position:absolute;
+  top: 450px;
+  left: 520px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 20px;
+}
+

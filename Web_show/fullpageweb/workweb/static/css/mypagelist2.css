@@ -1,0 +1,106 @@
+#s2_background {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 8%;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+
+/* 即時影像位置 */
+#json_audio_box{
+  position:absolute;
+  top: 10vw;
+  left: 15vw;
+  width:352px;
+  height:288px;
+  border-width: 2px;
+  border-style: solid;
+
+}
+
+/* 擷取影像位置 */
+#json_img_box{
+  position:absolute;
+  top: 10vw;
+  left: 35vw;
+  width:352px;
+  height:288px;
+  border-width: 2px;
+  border-style: solid;
+  /* background-color: white; */
+}
+
+/* 預測結果影像位置 */
+#json_img_predic_box{
+  position:absolute;
+  top: 10vw;
+  left: 55vw;
+  width:352px;
+  height:288px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* 預測結果位置 */
+#predic_result{
+  position:absolute;
+  top: 10vw;
+  left: 75vw;
+  width:150px;
+  height:150px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* 即時影像擷取位置 */
+#audio_img_test {
+  position:absolute;
+  top: 10vw;
+  left: 15vw;
+  width:200px;
+  height:200px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+
+
+
+
+/* 擷取影像按鈕 */
+#s2_show_img_id {
+  position:absolute;
+  top: 27vw;
+  left: 20vw;
+  width:200px;
+  height:200px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 20px;
+}
+
+/* 預測結果按鈕 */
+#s2_show_predic_id {
+  position:absolute;
+  top: 27vw;
+  left: 35vw;
+  width:200px;
+  height:200px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 20px;
+}
+
+/* 按鍵紀錄log */
+#img_log {
+  position:absolute;
+  top: 27vw;
+  left: 50vw;
+  width:400px;
+  height:200px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 15px;
+}

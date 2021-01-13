@@ -1,0 +1,218 @@
+/* 分層桌布 */
+#s3_background {
+    position:absolute;
+    top: 8%;
+    width:100%;
+    height:46%;
+    #background:	#808080;
+    z-index:0;
+    background: linear-gradient(90deg, rgba(187, 145, 133, 1)25%, rgba(255, 231, 198, 0.8)78%);
+    background: -moz-linear-gradient(90deg, rgba(187, 145, 133, 1)25%, rgba(255, 231, 198, 0.8)78%);
+    background: -webkit-linear-gradient(90deg, rgba(187, 145, 133, 1)25%, rgba(255, 231, 198, 0.8)78%);
+    background: -o-linear-gradient(90deg, rgba(187, 145, 133, 1)25%, rgba(255, 231, 198, 0.8)78%);
+}
+
+/* 分層桌布 */
+#s3_background_1 {
+    position:absolute;
+    top: 54%;
+    width:100%;
+    height:46%;
+    #background:	#808080;
+    z-index:0;
+    background: linear-gradient(270deg, rgba(113, 164, 88, 0.7)25%, rgba(255, 254, 198, 0.8)78%);
+    background: -moz-linear-gradient(270deg, rgba(113, 164, 88, 0.7)25%, rgba(255, 254, 198, 0.8)78%);
+    background: -webkit-linear-gradient(270deg, rgba(113, 164, 88, 0.7)25%, rgba(255, 254, 198, 0.8)78%);
+    background: -o-linear-gradient(270deg, rgba(113, 164, 88, 0.7)25%, rgba(255, 254, 198, 0.8)78%);
+}
+
+
+
+
+
+/* 分析結果數量 */
+#s3_box1 {
+    position:absolute;
+    top: 11%;
+    left: 10vw;
+    width:10vw;
+    height:40%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d3d3d3
+    z-index:1;
+}
+
+/* 年齡選擇按鈕 */
+#checkboxGroup {
+    position:absolute;
+    top: 10%;
+    left: 25vw;
+    width:10vw;
+    height:40%;
+    line-height: 0.3;
+    z-index:1;
+
+  }
+
+.content {
+  display: none;
+  }
+
+/* 年齡層圖示 */
+#show_age_img {
+    position:absolute;
+    top: 30%;
+    width:10vw;
+    height:10vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d3d3d3
+    z-index:1;
+}
+
+
+
+/* 現有營養素值 */
+#now_nutrients_canvas {
+    position:absolute;
+    top: 11%;
+    right: 2vw;
+    width:50vw;
+    height:40%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    z-index:1;
+}
+
+/* 標準營養素圖表 */
+#s3_box3 {
+    position:absolute;
+    top: 57%;
+    left: 10vw;
+    width:50vw;
+    height:40vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    z-index:1;
+}
+
+/* 資料上傳 */
+#s3_suggest_update {
+    position:absolute;
+    top: 57%;
+    right: 22vw;
+    width:15vw;
+    height:25vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    z-index:1;
+}
+
+/* 資料取得 */
+#s3_suggest_get {
+    position:absolute;
+    top: 57%;
+    right: 3vw;
+    width:15vw;
+    height:25vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    z-index:1;
+}
+
+
+
+
+/* 分析結果按鈕 */
+#s3_predic_update {
+    position:absolute;
+    top: 15%;
+    left: 2vw;
+    width:5vw;
+    height:30%;
+    z-index:1;
+}
+
+
+
+/* 營養素圖表按鈕 */
+#s3_chart_update {
+    position:absolute;
+    top: 62%;
+    left: 2vw;
+    width:5vw;
+    height:30%;
+    z-index:1;
+}
+
+
+/* 上傳按鈕 */
+#s3_suggest_button1 {
+    position:absolute;
+    top: 85%;
+    right: 24vw;
+    width: 10vw;
+    height:10vh;
+    z-index:1;
+}
+
+/* 取得按鈕 */
+#s3_suggest_button2 {
+    position:absolute;
+    top: 85%;
+    right: 5vw;
+    width: 10vw;
+    height:10vh;
+    z-index:1;
+}
+
+/* 加減按鈕 */
+#as{
+    position:absolute;
+    padding-left: 0px;
+    top: 12%;
+    left: 40vw;
+    width:7vw;
+    height:35%;
+    line-height: 1;
+    z-index:1;
+}
+
+#as > li {
+    margin:0;
+    padding:0;
+    float:left;
+    font-size: 12px;
+    list-style-type:none;
+    width:20px;
+    height:20px;
+    text-align:center;
+    line-height:20px;
+    border:#999 thin solid;
+    background-color:#fff;
+}
+
+#as > li button{
+    font-size:10px;
+    width:20px;
+    height:20px;
+    outline:none;
+    -webkit-appearance:none;
+    background:none;
+    margin:0;
+    padding:0;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color:#fff;
+}
+
+#as > label{
+    font-size: 10px;
+
+}
+

@@ -1,0 +1,21 @@
+version: "3"
+services:
+    app:
+        restart: always
+        build: .
+        command: "python manage.py runserver 0.0.0.0:8000"
+        volumes:
+         - .:/code
+        ports:
+          - "8000:8000"
+    
+    # flask-api:
+        # restart: always
+        # build: .
+        # command: "python flask_api.py 0.0.0.0:5000"
+        # volumes:
+         # - .:/code
+        # ports:
+          # - "5000:5000"
+        # depends_on:
+            # - app  

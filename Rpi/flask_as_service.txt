@@ -1,0 +1,19 @@
+cd /etc/systemd/systemls
+sudo nano
+-----
+[Unit]
+Description=flask service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/pic
+ExecStart=/usr/bin/python return.py
+Restart=always
+exit
+[Install]
+WantedBy=multi-user.target
+
+-------
+
+sudo systemctl start flask.service

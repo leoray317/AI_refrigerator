@@ -1,0 +1,67 @@
+#fp-nav ul li a span {
+  background: black !important;
+}
+
+#top_background {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 8%;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+#myMenu {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#myMenu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/*目前畫面*/
+#myMenu li.active {
+  background: #666;
+  background: #ffffff;
+  color: #fff;
+}
+
+#myMenu li a {
+  text-decoration: none;
+  color: #000;
+}
+#myMenu li.active a:hover {
+  color: #000;
+}
+#myMenu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#myMenu li a,
+#myMenu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+
+.pic {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  max-height: 50%;
+  max-width: 50%;
+  width: auto;
+  height: auto;
+}
