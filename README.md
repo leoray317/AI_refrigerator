@@ -1,5 +1,5 @@
 # iii_project:AI_refrigerator
-A refrigerator with food identifying,food recommended(by nutrition and price),food price prediction
+Refrigerator with food recognition function, recommended food (categorized by nutrition and price), food price prediction
  
 # Structure
 ![](./photo/Structure.PNG)
